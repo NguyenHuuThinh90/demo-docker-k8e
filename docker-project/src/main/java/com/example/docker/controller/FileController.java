@@ -31,11 +31,6 @@ public class FileController {
         }
         return ResponseEntity.ok().body(redisTemplate.opsForValue().get("t"));
     }
-
-    @GetMapping(value = "/test")
-    public ResponseEntity test() {
-        return ResponseEntity.ok().body("Hello World");
-    }
 }
 
 
